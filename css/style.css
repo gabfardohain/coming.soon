@@ -31,6 +31,7 @@
 }
 
 .container header{
+    margin-top: 50px;
     font-size: 60px;
     color: #bb0b0b;
     -webkit-text-stroke-width: 3px;
@@ -138,4 +139,14 @@ input::placeholder{
     .container header{
         font-size: 50px;
     }
+}
+
+.footer p{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 130px;
+    -webkit-text-stroke-width: none;
+    color: aliceblue;
+    font-size: 0.9em;
+    font-weight: 500;
 }
