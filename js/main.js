@@ -20,10 +20,10 @@ const timeFunction = setInterval(() => {
     let secValue = Math.floor((timeDiff % (1000 * 60)) / 1000);
 
     // Atualizando os elementos HTML com os valores calculados
-    seconds.textContent = secValue < 10 ? 0${secValue} : secValue;
-    minutes.textContent = minValue < 10 ? 0${minValue} : minValue;
-    hours.textContent = hoursValue < 10 ? 0${hoursValue} : hoursValue;
-    days.textContent = daysValue < 10 ? 0${daysValue} : daysValue;
+    seconds.textContent = secValue < 10 ? `0${secValue}` : secValue;
+    minutes.textContent = minValue < 10 ? `0${minValue}` : minValue;
+    hours.textContent = hoursValue < 10 ? `0${hoursValue}` : hoursValue;
+    days.textContent = daysValue < 10 ? `0${daysValue}` : daysValue;
 
     // Verificando se a data de destino foi atingida e parando o contador
     if (timeDiff <= 0) {
